@@ -24,13 +24,13 @@ while running :
     numbers.sort()
 
     # Ask the User to choose a Number
-    user_input = int(input(f'Choose a Number {numbers[0]} , {numbers[1]}, {numbers[2]} : '))
+    user_input = int(input(f'Choose a Number {numbers[0]} , {numbers[1]} , {numbers[2]} : '))
 
     # Try again if number isn't in list
     while user_input not in numbers:
 
         # Loop Try Again until the number typed is in the list
-        user_input = int(input(f'Number not in List ! Try Again ! Choose a Number {numbers[0]} , {numbers[1]}, {numbers[2]} : '))
+        user_input = int(input(f'Number not in List ! Try Again ! Choose a Number {numbers[0]} , {numbers[1]} , {numbers[2]} : '))
         continue
 
     # Check If the Number Belongs to the range
@@ -58,7 +58,7 @@ while running :
             while user_retry != 'Y' and user_retry != 'N':
 
                 # In Failure Retrying , Please retype Y / N
-                print('Please Type \'Y\' to retry the Game or \'O\' to quit    :   ')
+                print('Please Type \'Y\' to retry the Game or \'N\' to quit    :   ')
 
                 user_retry = input('Retry the Game ? Y/N  :   ')
 
